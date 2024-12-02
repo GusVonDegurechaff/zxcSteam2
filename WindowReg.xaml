@@ -1,0 +1,40 @@
+﻿<Window x:Class="zxcSteam2.WindowReg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zxcSteam2"
+        mc:Ignorable="d"
+        Title="WindowReg" Height="400" Width="550">
+    <Window.Background>
+        <ImageBrush ImageSource="/regimg.jpg" Opacity="0.35"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Username " FontFamily="Bender" FontSize="18" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"/>
+        <TextBox x:Name="usernamereg" FontFamily="Bender" Grid.Column="1" Grid.Row="0" Width="250" Height="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Text="Email " FontFamily="Bender" FontSize="18" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"/>
+        <TextBox x:Name="emailreg" FontFamily="Bender" Grid.Column="1" Grid.Row="1" Width="250" Height="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Text="password " FontFamily="Bender" FontSize="18" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"/>
+        <PasswordBox x:Name="passwordreg" Grid.Column="1" Grid.Row="2" Width="250" Height="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Text="checkpassword " FontFamily="Bender" FontSize="18" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White"/>
+        <PasswordBox x:Name="checkpasswordreg" Grid.Column="1" Grid.Row="3" Width="250" Height="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Button x:Name="Register" Click="Register_Click" Grid.Column="1" Grid.Row="4" Height="25" Width="100" Background="White" BorderBrush="White">
+            <TextBlock Text="Регистрация" FontFamily="Bender" FontSize="18"/>
+        </Button>
+        <Button x:Name="RegisterBack" Click="RegisterBack_Click" Grid.Column="0" Grid.Row="4" Height="25" Width="75" Background="White" BorderBrush="White">
+            <TextBlock Text="Назад" FontFamily="Bender" FontSize="18"/>
+        </Button>
+    </Grid>
+</Window>

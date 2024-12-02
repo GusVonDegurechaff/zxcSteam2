@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="autimg.jpg" />
+    <None Remove="Fonts\Goth.ttf" />
+    <None Remove="Fonts\Tarkov.ttf" />
+    <None Remove="GameProfImg\photo_2024-11-27_18-16-19.jpg" />
+    <None Remove="Images\autimg.jpg" />
+    <None Remove="Images\regimg.jpg" />
+    <None Remove="leftbackimgprof.jpg" />
+    <None Remove="regimg.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net" Version="0.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.36">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.36" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.36">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="autimg.jpg" />
+    <Resource Include="Fonts\Goth.ttf" />
+    <Resource Include="Fonts\Tarkov.ttf" />
+    <Resource Include="GameProfImg\photo_2024-11-27_18-16-19.jpg" />
+    <Resource Include="Images\autimg.jpg" />
+    <Resource Include="Images\regimg.jpg" />
+    <Resource Include="leftbackimgprof.jpg" />
+    <Resource Include="regimg.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ProfileImage\" />
+    <Folder Include="GameInstaller\" />
+  </ItemGroup>
+
+</Project>
